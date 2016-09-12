@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build-A-Bae </title>
+    <h2> Please Enter Your Details For Our Dating Website</h2>
+</head>
+
+<style type="text/css">
+fieldset {
+    background: lightyellow;
+    border: 10px solid yellow;
+    margin-bottom: 10px;
+    width: 720px;
+}
+    label {
+    width: 180px
+    display:inline-block;
+    text-align: right;
+    vertical-align: top;
+
+    }
+    .radio label {
+        width:auto;
+    }
+    textarea {
+        width: 360px;
+        height:50px;
+    }
+
+h4.Salary {
+    display: inline;
+    font-weight: normal;
+    color: white;
+    background-color: purple;
+    border: 2px solid purple;
+    padding-left:7px ;
+    padding-right: 7px;
+    text-align: center;
+}
+h4.Height {
+    display: inline;
+    font-weight: normal;
+    color: white;
+    background-color: #a70e03;
+    border: 2px solid #a70e03;
+    vertical-align: top;
+
+}
+h4.Poor {
+    display: inline;
+    font-weight: normal;
+    color: white;
+    background-color: #a70e03;
+    border: 2px solid #a70e03;
+    padding-left: 4px;
+    padding-right: 1px;
+    text-align: center;
+    vertical-align: top;
+}
+h4.Rich {
+    display: inline;
+    font-weight: normal;
+    color: white;
+    background-color: purple;
+    border: 2px solid purple;
+    padding-left: 4px;
+    padding-right: 4.5px;
+}
+
+input.align {
+    display: table-cell;
+    vertical-align: middle;
+    height: 6px;
+    border: 1px solid ;
+    padding-left: 2.5px;
+}
+
+
+
+
+</style>
+
+
+
+<body>
+
+<!--Your Face Box-->
+<fieldset>
+ <legend> Your Face</legend>
+    <input type="file" required>
+   <br>
+    <label for="name">Image preview:</label>
+    <img id="preview">
+
+</fieldset>
+
+<!--Your General Detail-->
+<fieldset>
+    <legend>Your General Detail</legend>
+    <label for="Name">Name: </label>
+    <input type="text" id="Name" name="Name"required>
+    <br>
+
+    <label for="Gender">Gender:</label>
+        <input type="radio" id="Gender" Name="Gender" class="radio" required><label for="Name">Male</label>
+        <input type="radio" id="male" Name="Gender" class="radio" required><label for="Name">Female</label>
+    <br>
+
+    <label for="number">Age:</label>
+    <input type="number" id="number" name="Age"required>
+    <br>
+
+    <label for="date">Date of Birth:</label>
+    <input type= "date" id="date" Name="date" >
+    <br>
+
+    <label for="Favorite Color">Favorite Color:</label>
+    <input type="color" id="Favorite Color" Name="Favorite Color">
+    <br>
+
+    <label for="Name">Which country:</label>
+    <select>
+        <option value="America">America</option>
+        <option value="Canada">Canada</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Philippines">Philippines</option>
+        <option value="No Selection">No Selection</option>
+    </select>
+    </fieldset>
+<!--Your Indicators-->
+<fieldset>
+<legend> Your Indicators </legend>
+<label for="Height">Height: </label>
+<h4 class="Height">Short</h4>
+<input type="range" min="0" max="100" id="height" name="height" class="align">
+<h4 class="Salary">Tall</h4>
+
+<br>
+<label for="Salary">Salary : </label>
+    <h4 class="Poor">Poor</h4>
+<input type="range" min="0" max="100" id="salary" name="salary" class="align">
+<h4 class="Rich">Rich</h4>
+</fieldset>
+
+<!--Your Contact Information-->
+<fieldset>
+<legend>Your Contact Information</legend>
+<label for="contact">Email:</label>
+<input type="email" id="contact" name="contact"required>
+<br>
+
+<label for="mobile">Mobile:</label>
+<input type="tel" id="mobile" name="mobile">
+<br>
+
+<label for="Name">Address:</label>
+<textarea></textarea>
+<br>
+
+<label for="Name">Method to contact you:</label>
+
+    <label for="email">Email</label>
+    <input type="checkbox" id="email" name="email" class="radio">
+
+    <label for="whatsapp">Whatsapp</label>
+    <input type="checkbox" id="whatsapp" name="whatsapp" class="radio">
+
+    <label for="in-app chat">In-app chat</label>
+    <input type="checkbox" id="in-app chat" name="in-app chat" class="radio">
+</fieldset>
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="sumbit">
+
+</body>
+</html>
